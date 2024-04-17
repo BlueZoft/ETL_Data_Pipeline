@@ -1,0 +1,9 @@
+{
+	"name": "assignment-2-akila",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b28b98bb-6183-436d-9702-c32445c9a9d8",
+		"tenantId": "54efe58d-72b7-45af-9a01-30ee5f377a71"
+	}
+}
