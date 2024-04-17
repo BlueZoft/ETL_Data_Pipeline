@@ -1,0 +1,23 @@
+{
+	"name": "assignment2sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "assignment2sinkservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "transformed",
+				"fileSystem": "game-sales"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

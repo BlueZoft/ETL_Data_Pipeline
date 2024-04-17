@@ -1,0 +1,24 @@
+{
+	"name": "assignment2db",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "assignment2service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "vgsales.csv",
+				"folderPath": "raw-data",
+				"container": "game-sales"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
