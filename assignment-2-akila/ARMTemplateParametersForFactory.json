@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "assignment-2-akila"
+		},
+		"assignment2service_connectionString": {
+			"value": ""
+		},
+		"assignment2sinkservice_accountKey": {
+			"value": ""
+		},
+		"assignment2sinkservice_properties_typeProperties_url": {
+			"value": "https://assignment2akila.dfs.core.windows.net/"
+		}
+	}
+}
