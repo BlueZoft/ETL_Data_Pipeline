@@ -1,0 +1,13 @@
+Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,Global_Sales
+1,Call of Duty Synthetic Alpha,PS4,2016,Shooter,Example Studio A,1.20,0.80,0.10,0.20,2.30
+2,Grand Theft Auto Synthetic Beta,PC,2016,Action,Example Studio B,0.90,0.70,0.05,0.15,1.80
+3,Pokemon Synthetic Gamma,3DS,2016,Role-Playing,Example Studio C,0.40,0.30,0.60,0.10,1.40
+4,FIFA Synthetic Delta,PS4,2016,Sports,Example Studio D,0.20,0.90,0.05,0.15,1.30
+5,Example Orbit,2600,1982,Action,Example Studio E,0.70,0.10,0.00,0.05,0.85
+6,Example Garden,PC,2015,Simulation,Example Studio A,0.30,0.25,0.05,0.05,0.65
+7,Example Rally,PS4,2016,Racing,Example Studio B,0.20,0.30,0.02,0.03,0.55
+8,Example Puzzle,3DS,N/A,Puzzle,Example Studio C,0.10,0.10,0.20,0.02,0.42
+9,Example Journey,PC,2016,Adventure,Example Studio D,0.15,0.10,0.05,0.02,0.32
+10,Example Arena,PC,2016,Fighting,Example Studio E,0.10,0.08,0.04,0.01,0.23
+11,Example Tactics,3DS,2016,Strategy,Example Studio A,0.05,0.05,0.08,0.01,0.19
+12,Example Mystery,PC,N/A,Adventure,Example Studio B,,0.04,0.01,0.01,0.06

@@ -1,11 +1,30 @@
 # Video-game sales ETL and visual analysis
 
+## Architecture
+
+Solid arrows show implemented workflows. The ADF copy and notebook run independently; ADF does not launch the notebook. Dotted arrows show proposed extensions.
+
+```mermaid
+flowchart LR
+    BLOB["Blob: raw-data/vgsales.csv"] --> ADF["ADF assignment2pipeline"]
+    ADF --> LAKE["ADLS Gen2: transformed CSV copy"]
+    INPUT["Configured CSV: real or synthetic sample"] --> NOTEBOOK["Databricks notebook: schema and platform normalization"]
+    NOTEBOOK --> OUTPUT["Fresh output directory: CSV part files"]
+    NOTEBOOK --> CHARTS["Spark SQL, Pandas and Plotly analyses"]
+    NOTEBOOK -. proposed .-> MODULES["Reusable transformations with fixture tests"]
+    CHARTS -. proposed .-> TRENDS["Year and data-quality comparisons"]
+```
+
 This coursework contains an Azure Data Factory copy exercise and a Databricks/PySpark analysis notebook for video-game sales. It does not analyse movie data or currently use SQL.
 
 - `assignment2pipeline` copies Blob `raw-data/vgsales.csv` to an ADLS Gen2 `transformed/` folder. It performs CSV copying, not the notebook's transformations.
 - `Assignment 2.ipynb` reads a configured CSV, sets a schema, normalizes Atari platform labels, writes CSV output, and produces Plotly charts for genre counts, platform sales, publisher sales, franchise comparisons and regional averages.
 
 These workflows are independent; ADF does not launch the notebook. Do not point their output paths at one another. Genre counts describe representation in the supplied dataset, not popularity across all games; franchise matching is limited to four literal name prefixes.
+
+## Synthetic sample
+
+Start with [examples/vgsales.synthetic.csv](examples/vgsales.synthetic.csv): 12 invented rows matching the notebook's input schema, including Atari labels, missing years and a missing sales value. See [the sample usage guide](examples/README.md) for upload steps, widget paths and expected inspection points. No real dataset or credentials are needed to inspect the sample; executing the notebook still requires Databricks.
 
 ## Notebook data and runtime
 
