@@ -1,0 +1,12 @@
+# Local data, credentials and generated artifacts
+.env
+.env.*
+!.env.example
+config/local*
+data/
+output/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+node_modules/
+ArmTemplateOutput/

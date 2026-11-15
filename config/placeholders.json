@@ -1,0 +1,21 @@
+{
+  "linkedService/assignment2service.json": {
+    "secretName": "Name of a Key Vault secret holding the complete connection string, not the secret value."
+  },
+  "linkedService/assignment2sinkservice.json": {
+    "url": "Storage account endpoint; grant factory managed identity Storage Blob Data Contributor and required ADLS ACLs."
+  },
+  "linkedService/CourseworkKeyVault.json": {
+    "baseUrl": "Key Vault URL. Grant factory identity permission to read the named secrets."
+  },
+  "dataset/assignment2db.json": {
+    "container": "Existing container/filesystem for this dataset (original coursework label: game-sales)."
+  },
+  "dataset/assignment2sink.json": {
+    "fileSystem": "Existing container/filesystem for this dataset (original coursework label: game-sales)."
+  },
+  "Assignment 2.ipynb": {
+    "input_csv": "Databricks widget: full path to input CSV in an authorized Volume or storage location.",
+    "output_dir": "Databricks widget: fresh output directory outside the input directory; existing output is not overwritten."
+  }
+}

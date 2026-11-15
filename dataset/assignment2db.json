@@ -12,7 +12,7 @@
 				"type": "AzureBlobStorageLocation",
 				"fileName": "vgsales.csv",
 				"folderPath": "raw-data",
-				"container": "game-sales"
+				"container": "<GAME_SALES_CONTAINER>"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

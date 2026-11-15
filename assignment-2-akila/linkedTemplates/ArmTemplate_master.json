@@ -5,7 +5,7 @@
 		"factoryName": {
 			"type": "string",
 			"metadata": "Data Factory name",
-			"defaultValue": "assignment-2-akila"
+			"defaultValue": "<FACTORY_NAME>"
 		},
 		"assignment2service_connectionString": {
 			"type": "secureString",
@@ -17,7 +17,7 @@
 		},
 		"assignment2sinkservice_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://assignment2akila.dfs.core.windows.net/"
+			"defaultValue": "https://<STORAGE_ACCOUNT>.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",

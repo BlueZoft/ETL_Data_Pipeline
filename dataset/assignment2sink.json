@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"folderPath": "transformed",
-				"fileSystem": "game-sales"
+				"fileSystem": "<GAME_SALES_CONTAINER>"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

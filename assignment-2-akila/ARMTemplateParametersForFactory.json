@@ -3,7 +3,7 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"factoryName": {
-			"value": "assignment-2-akila"
+			"value": "<FACTORY_NAME>"
 		},
 		"assignment2service_connectionString": {
 			"value": ""
@@ -12,7 +12,7 @@
 			"value": ""
 		},
 		"assignment2sinkservice_properties_typeProperties_url": {
-			"value": "https://assignment2akila.dfs.core.windows.net/"
+			"value": "https://<STORAGE_ACCOUNT>.dfs.core.windows.net/"
 		}
 	}
 }
